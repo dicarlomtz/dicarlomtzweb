@@ -289,6 +289,10 @@ function verifyContactForm() {
         text: 'Email sent successfully!',
         icon: 'success'
       });
+      $('#message').val("");
+      $('#subject').val("");
+      $('#email').val("");
+      $('#name').val("");
     },
     error: function (xhr, status, error) {
       Swal.fire({
